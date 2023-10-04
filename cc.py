@@ -2,7 +2,9 @@ import random
 import time
 
 def generate_credit_card_number():
-    return ''.join(str(random.randint(0, 9)) for _ in range(16))
+    prefix = str(random.randint(4000000000000000, 7999999999999999))
+    suffix = str(random.randint(100000000, 9999999999))
+    return prefix + suffix
 
 def generate_cvc():
     return str(random.randint(100, 999))
@@ -21,7 +23,7 @@ def generate_credit_card_info(count):
         print(f"\033[91mCVC: \033[32m{cvc}\033[0m")
         print(f"\033[91mSon Kullanma Tarihi: \033[32m{date}\033[0m")
         print(f"\033[91mBanka: \033[32m{bank}\033[0m")
-        print("\033[94m----------------PLOXERET BİR DÜNYA MARKASI XDD----------------\033[0m \033[32m✓\033[0m")
+        print(f"\033[94m----------------PLOXERET BİR DÜNYA MARKASI XDD----------------\033[0m \033")
         time.sleep(1)
 
 count = int(input("Kaç adet kredi kartı bilgisi üretmek istiyorsunuz?: "))
