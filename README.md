@@ -4,7 +4,7 @@
 # credit card
 # cc gen
 # cc generator
- FOR WİNDOWS --> 
+ WİNDOWS --> 
 
  Bir kod editörü açın
 
@@ -12,10 +12,12 @@
  ve cc.py dosyasını çalıştırın
 
  
- miktar girin
+ üretilicek miktar girin
  
 
- FOR LİNUX -->
+ LİNUX -->
+terminal açın
+
 
  cd cc
 
@@ -23,4 +25,4 @@
 python cc.py
 
 
-miktar girin ->
+üretilicek miktar girin ->
